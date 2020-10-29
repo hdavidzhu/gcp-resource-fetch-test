@@ -4,13 +4,13 @@ const CREDENTIALS = require("./credentials.json");
 const PROJECT_IDS = ["insert-project-ids", "here"]; // TODO: Change this
 
 (async () => {
-  const spanner = new Spanner({
-    credentials: CREDENTIALS,
-    projectId,
-  });
-
   for (const projectId of PROJECT_IDS) {
     console.log("projectId: ", projectId);
+
+    const spanner = new Spanner({
+      credentials: CREDENTIALS,
+      projectId,
+    });
 
     const [instances] = await spanner.getInstances();
     console.log("instances: ", JSON.stringify(instances));
