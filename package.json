@@ -1,0 +1,22 @@
+{
+  "name": "gcp-resource-fetch-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hdavidzhu/gcp-resource-fetch-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hdavidzhu/gcp-resource-fetch-test/issues"
+  },
+  "homepage": "https://github.com/hdavidzhu/gcp-resource-fetch-test#readme",
+  "dependencies": {
+    "@google-cloud/spanner": "^5.3.0"
+  }
+}
